@@ -75,7 +75,7 @@ def detector_movimiento(chat_id):
                 i = i + 1           
             out.release()
             videoa = open(alerta, "rb")
-            bot.send_video(chat_id, videoa, caption="Si no estás en casa cuidaico aes")
+            bot.send_video(chat_id, videoa, caption="Alerta posible intruso")
             videoa.close()
             # os.remove(alerta)
         cv2.imshow("Motion Detection", frame1)
